@@ -13,7 +13,7 @@
             "href": "#tours"
         },
         {
-            "name": "Eventos Astronómicos",
+            "name": "Eventos",
             "href": "#eventos"
         },
         {
@@ -23,6 +23,10 @@
         {
             "name": "Colaboradores",
             "href": "#colaboradores"
+        },
+        {
+            "name": "Contacto",
+            "href": "#contacto"
         }
     ]
 }

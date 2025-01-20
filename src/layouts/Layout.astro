@@ -22,10 +22,9 @@ const { title, description, keywords } = Astro.props;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/webp" href="./logo_centauri_black.webp" />
-    <link rel="sitemap" href="/sitemap-index.xml" /><link
-      rel="stylesheet"
-      href="./styles/global.css"
-    /><meta name="generator" content={Astro.generator} /><meta
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta name="generator" content={Astro.generator} /><meta
       name="description"
       content={description || "Astroturísmo Centauri"}
     /><meta
@@ -53,6 +52,7 @@ const { title, description, keywords } = Astro.props;
   <style>
     html,
     body {
+      scroll-behavior: smooth;
       font-family: "Outfit Variable", sans-serif;
       margin: 0;
       width: 100%;

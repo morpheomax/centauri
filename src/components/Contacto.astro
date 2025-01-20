@@ -1,0 +1,81 @@
+---
+import StarryBackground from "./StarryBackground.astro"; // Asegúrate de tener el componente StarryBackground
+---
+
+<section class="relative py-16 bg-black text-white">
+  <!-- Fondo estrellado -->
+  <StarryBackground starCount={100} />
+
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <!-- Fondo oscuro para contraste -->
+
+  <div class="relative container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-6">
+      Contáctanos para tu próxima aventura
+    </h2>
+    <p class="text-lg text-center mb-12 max-w-3xl mx-auto">
+      ¿Tienes preguntas sobre nuestros tours? Completa el formulario y nos
+      pondremos en contacto contigo. ¡Te esperamos para vivir una experiencia
+      única!
+    </p>
+
+    <form
+      action="/send-email.php"
+      method="POST"
+      class="flex flex-col gap-6 max-w-lg mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg"
+    >
+      <!-- Campo nombre -->
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Tu Nombre"
+        required
+        class="border-2 border-gray-300 rounded p-4 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <!-- Campo apellido -->
+      <input
+        type="text"
+        name="apellido"
+        placeholder="Tu Apellido"
+        required
+        class="border-2 border-gray-300 rounded p-4 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <!-- Campo teléfono -->
+      <input
+        type="tel"
+        name="telefono"
+        placeholder="Tu Teléfono"
+        required
+        class="border-2 border-gray-300 rounded p-4 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <!-- Campo correo -->
+      <input
+        type="email"
+        name="correo"
+        placeholder="Tu Correo Electrónico"
+        required
+        class="border-2 border-gray-300 rounded p-4 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <!-- Campo comentario -->
+      <textarea
+        name="comentario"
+        placeholder="Escribe tu mensaje o pregunta"
+        rows="5"
+        required
+        class="border-2 border-gray-300 rounded p-4 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+
+      <!-- Botón de envío -->
+      <button
+        type="submit"
+        class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+      >
+        Enviar Mensaje
+      </button>
+    </form>
+  </div>
+</section>
