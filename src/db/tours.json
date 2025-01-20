@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Tour Observación Planetaria",
+        "description": "Los dejamos invitados para el próximo SÁBADO 25 de ENERO para el tour astronómico del año. Incluye transporte, charla astronómica, observación planetaria y más.",
+        "date": "2025-01-25T18:00:00Z",
+        "price": 50000,
+        "image": "./images/tours/tour-2.png",
+        "link": "url_del_link_de_reserva",
+        "details": {
+            "included": [
+                "Transporte IDA y VUELTA hacia el Valle del Aconcagua. Punto de encuentro: Metro Vicente Valdés. Línea 5. Salida a las 18.00 hrs. Regreso a las 03 Am aprox al mismo punto.",
+                "Charla astronómica con expertos.",
+                "Observación Planetaria (Venus, Saturno, Urano, Júpiter y Marte) más Cielo Profundo a través de potentes telescopios.",
+                "Muestra de Meteoritos.",
+                "Snack.",
+                "Astrofotografía de Recuerdo."
+            ],
+            "priceText": "$50.000 por persona. Reserva en el link de la bio con el 50% de descuento.",
+            "limitedSpots": true
+        }
+    },
+    {
+        "id": 2,
+        "name": "Tour Cajón del Maipo",
+        "description": "Los dejamos invitados para el próximo VIERNES 17 DE ENERO, desde las 21 hrs, a nuestro TOUR ASTRÓNOMICO en el camping @serraniamaipo en el Cajón del Maipo.",
+        "date": "2025-01-17T12:00:00Z",
+        "price": 25000,
+        "image": "./images/tours/tour-3.png",
+        "link": "url_del_link_de_reserva",
+        "details": {
+            "included": [
+                "Observación por telescopios",
+                "Charla astronómica con expertos",
+                "Muestra de Meteoritos",
+                "Fotografía de recuerdo con el cielo estrellado",
+                "Postal de recuerdo",
+                "Cerveza artesanal de bienvenida"
+            ],
+            "priceText": "$25.000 por persona. Reserva en el link de la bio con el 50% de descuento.",
+            "limitedSpots": true
+        }
+    },
+    {
+        "id": 3,
+        "name": "Tour Observación Planetaria",
+        "description": "Los dejamos invitados para el próximo SÁBADO 25 de ENERO para el tour astronómico del año. Incluye transporte, charla astronómica, observación planetaria y más.",
+        "date": "2025-01-25T18:00:00Z",
+        "price": 50000,
+        "image": "./images/tours/tour-2.png",
+        "link": "url_del_link_de_reserva",
+        "details": {
+            "included": [
+                "Transporte IDA y VUELTA hacia el Valle del Aconcagua. Punto de encuentro: Metro Vicente Valdés. Línea 5. Salida a las 18.00 hrs. Regreso a las 03 Am aprox al mismo punto.",
+                "Charla astronómica con expertos.",
+                "Observación Planetaria (Venus, Saturno, Urano, Júpiter y Marte) más Cielo Profundo a través de potentes telescopios.",
+                "Muestra de Meteoritos.",
+                "Snack.",
+                "Astrofotografía de Recuerdo."
+            ],
+            "priceText": "$50.000 por persona. Reserva en el link de la bio con el 50% de descuento.",
+            "limitedSpots": true
+        }
+    },
+    {
+        "id": 4,
+        "name": "Tour Observación Planetaria",
+        "description": "Los dejamos invitados para el próximo SÁBADO 25 de ENERO para el tour astronómico del año. Incluye transporte, charla astronómica, observación planetaria y más.",
+        "date": "2025-01-25T18:00:00Z",
+        "price": 50000,
+        "image": "./images/tours/tour-2.png",
+        "link": "url_del_link_de_reserva",
+        "details": {
+            "included": [
+                "Transporte IDA y VUELTA hacia el Valle del Aconcagua. Punto de encuentro: Metro Vicente Valdés. Línea 5. Salida a las 18.00 hrs. Regreso a las 03 Am aprox al mismo punto.",
+                "Charla astronómica con expertos.",
+                "Observación Planetaria (Venus, Saturno, Urano, Júpiter y Marte) más Cielo Profundo a través de potentes telescopios.",
+                "Muestra de Meteoritos.",
+                "Snack.",
+                "Astrofotografía de Recuerdo."
+            ],
+            "priceText": "$50.000 por persona. Reserva en el link de la bio con el 50% de descuento.",
+            "limitedSpots": true
+        }
+    }
+]

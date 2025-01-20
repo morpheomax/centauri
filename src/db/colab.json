@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Colaborador 1",
+        "logo": "./images/colaboradores/centauri.jpg",
+        "link": "https://www.colaborador1.com"
+    },
+    {
+        "name": "Colaborador 2",
+        "logo": "./images/colaboradores/centauri.jpg",
+        "link": "https://www.colaborador2.com"
+    },
+    {
+        "name": "Colaborador 3",
+        "logo": "./images/colaboradores/centauri.jpg",
+        "link": "https://www.colaborador3.com"
+    }
+]

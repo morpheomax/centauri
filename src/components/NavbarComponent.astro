@@ -1,0 +1,8 @@
+---
+import Navbar from "../components/Navbar";
+import navData from "../db/data.json";
+
+const links = navData.navItems; //Extraemos los datos del array
+---
+
+<Navbar links={links} client:only="react" />

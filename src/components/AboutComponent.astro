@@ -1,0 +1,61 @@
+---
+import StarryBackground from "./StarryBackground.astro";
+---
+
+<section
+  class="relative min-h-screen flex flex-col justify-center items-center bg-black px-6 md:px-16 lg:px-32 text-white overflow-hidden"
+>
+  <!-- Fondo estrellado -->
+  <StarryBackground starCount={100} />
+
+  <article
+    class="relative z-10 flex flex-col lg:flex-row gap-16 lg:gap-20 items-center"
+  >
+    <!-- Sección de Texto -->
+    <div class="lg:w-1/2 space-y-8 animate-fade-in">
+      <h3
+        class="text-4xl font-bold uppercase tracking-wide text-center lg:text-left animate-slide-in"
+      >
+        Nosotros
+      </h3>
+      <p class="text-lg leading-relaxed">
+        "En <span class="font-semibold text-teal-400"
+          >Astroturismo Centauri</span
+        > ofrecemos experiencias únicas para conectar con el universo. Desde tours
+        guiados hasta observación con telescopios de última generación, te invitamos
+        a redescubrir el cielo desde una perspectiva única."
+      </p>
+      <div class="grid gap-8">
+        <div>
+          <h4 class="text-2xl font-semibold text-teal-300">
+            Historia / Valores
+          </h4>
+          <p class="text-base leading-relaxed text-gray-300">
+            Fundada en 2023, nuestra misión es acercar la astronomía al público
+            general y promover el respeto por el medioambiente y los cielos
+            oscuros.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-2xl font-semibold text-teal-300">
+            Ubicación destacada
+          </h4>
+          <p class="text-base leading-relaxed text-gray-300">
+            Nuestros servicios se centran en el <span class="text-teal-400"
+              >Valle del Elqui</span
+            >, reconocido como uno de los cielos más limpios del mundo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Imagen -->
+    <div class="relative lg:w-1/2 animate-fade-in">
+      <img
+        src="./images/aboutimage.jpg"
+        alt="Telescopio bajo un cielo estrellado"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </article>
+</section>

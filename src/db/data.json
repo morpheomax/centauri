@@ -1,0 +1,28 @@
+{
+    "navItems": [
+        {
+            "name": "Inicio",
+            "href": "#hero"
+        },
+        {
+            "name": "Nosotros",
+            "href": "#about"
+        },
+        {
+            "name": "Tours",
+            "href": "#tours"
+        },
+        {
+            "name": "Eventos Astronómicos",
+            "href": "#eventos"
+        },
+        {
+            "name": "Galería",
+            "href": "#galeria"
+        },
+        {
+            "name": "Colaboradores",
+            "href": "#colaboradores"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+---
+import { ClientRouter } from "astro:transitions";
+// Supports weights 100-900
+import "@fontsource-variable/outfit";
+import Footer from "../components/Footer.astro";
+import NavbarComponent from "../components/NavbarComponent.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
+// props para la información de las paginas
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+}
+
+const { title, description, keywords } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/webp" href="./logo_centauri_black.webp" />
+    <link rel="sitemap" href="/sitemap-index.xml" /><link
+      rel="stylesheet"
+      href="./styles/global.css"
+    /><meta name="generator" content={Astro.generator} /><meta
+      name="description"
+      content={description || "Astroturísmo Centauri"}
+    /><meta
+      name="keywords"
+      content={keywords ||
+        "astronimia, atros, turismo, astroturismo, telescopio, luna, satelites, estrellas, cometas, observatorio, chile, santiago, cajon del maipo"}
+    /><title>
+      {title || "Astroturísmo Centauri"}
+    </title></head
+  >
+
+  <!-- SEO -->
+
+  <!-- viewtransition -->
+  <ClientRouter />
+  <title>Astro Turísmo Centauri</title>
+
+  <body>
+    <NavbarComponent />
+    <slot />
+  </body>
+  <WhatsAppButton />
+  <Footer />
+
+  <style>
+    html,
+    body {
+      font-family: "Outfit Variable", sans-serif;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+
+</html>

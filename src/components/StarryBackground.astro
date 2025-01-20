@@ -1,0 +1,51 @@
+---
+// Generamos las estrellas en el script para pasarlas al renderizado.
+const stars = Array.from({ length: 100 }, () => ({
+  x: Math.random(),
+  y: Math.random(),
+  delay: Math.random() * 100,
+}));
+---
+
+<div class="background">
+  {
+    stars.map((star, index) => (
+      <span
+        style={`--random-x: ${star.x}; --random-y: ${star.y}; animation-delay: -${star.delay}s;`}
+      />
+    ))
+  }
+</div>
+
+<style>
+  @keyframes move {
+    100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+  }
+
+  .background {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .background span {
+    position: absolute;
+    width: 0.3vmin;
+    height: 0.3vmin;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    animation: move 100s linear infinite;
+    box-shadow: 0 0 1vmin currentColor;
+    background-color: currentColor;
+    color: #ffffff;
+
+    /* Variables CSS para posición */
+    top: calc(var(--random-y) * 100%);
+    left: calc(var(--random-x) * 100%);
+    transform-origin: calc(var(--random-x) * 10vw) calc(var(--random-y) * 10vh);
+  }
+</style>

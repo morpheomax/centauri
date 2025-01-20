@@ -1,0 +1,33 @@
+---
+import StarryBackground from "../components/StarryBackground.astro";
+---
+
+<html lang="es">
+  <head>
+    <title>Error - Algo salió mal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body
+    class="bg-black text-white flex flex-col justify-center items-center min-h-screen"
+  >
+    <!-- Fondo estrellado -->
+    <StarryBackground starCount={150} />
+
+    <div class="relative z-10 text-center space-y-6 px-6">
+      <img
+        src="/images/error-space.webp"
+        alt="Error espacial"
+        class="mx-auto w-64 h-auto"
+      />
+      <h1 class="text-5xl font-bold">¡Oops! Algo salió mal.</h1>
+      <p class="text-xl">Por favor, intenta nuevamente más tarde.</p>
+      <a
+        href="/"
+        class="mt-4 inline-block bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-400 transition"
+      >
+        Volver al inicio
+      </a>
+    </div>
+  </body>
+</html>

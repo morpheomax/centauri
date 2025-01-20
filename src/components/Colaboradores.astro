@@ -1,0 +1,40 @@
+---
+import StarryBackground from "./StarryBackground.astro";
+import collaborators from "../db/colab.json"; // Importar el archivo JSON con los datos de los colaboradores
+---
+
+<section
+  class="relative min-h-screen bg-black text-white overflow-hidden"
+>
+  <!-- Fondo estrellado -->
+  <StarryBackground starCount={100} />
+
+  <!-- Contenedor principal -->
+  <div class="relative z-10 flex flex-col justify-center items-center px-6 md:px-16 lg:px-32 py-16">
+    <h3 class="text-4xl font-bold uppercase tracking-wide text-center mb-12 animate-slide-in">
+      Nuestros Colaboradores
+    </h3>
+
+    <!-- Grid de logos de colaboradores -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+      {collaborators.map((colab) => (
+        <div
+         
+          class="flex flex-col items-center justify-center  transition duration-300"
+        >
+          <!-- Logo del colaborador -->
+          <a href={colab.link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={colab.logo}
+              alt={`Logo de ${colab.name}`}
+              class="w-40 h-40 object-contain mb-4"
+            />
+          </a>
+
+          <!-- Nombre del colaborador -->
+          {/* <p class="text-xl font-semibold text-teal-400">{colab.name}</p> */}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "animate.css";
+import ButtonComponent from "../components/ButtonComponent.astro";
+import AboutComponent from "../components/AboutComponent.astro";
+import TourComponent from "../components/TourComponent.astro";
+import EventosAstronomicos from "../components/EventosAstronomicos.astro";
+import GalleryComponent from "../components/GalleryComponent.astro";
+import Colaboradores from "../components/Colaboradores.astro";
+
+// Supports weights 100-900
+import "@fontsource-variable/orbitron";
+---
+
+<Layout
+  title="Astroturismo Centauri"
+  description="Astroturismo Centauri"
+  keywords="Astroturismo Centauri"
+>
+  <section id="hero" class="h-screen w-full relative">
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0">
+      <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+        <source src="./videos/herovideo2.mp4" type="video/mp4" />
+        Tu navegador no soporta la reproducción de videos.
+      </video>
+    </div>
+
+    <!-- Contenido del Hero -->
+    <div
+      class="relative flex flex-col h-screen bg-gradient-to-b from-transparent to-black justify-center items-start px-12 text-hero"
+    >
+      <h1
+        class="relative font-black text-[3.75rem] md:text-[5rem] lg:text-[6rem] uppercase stroke-text w-full -mb-8 md:-mb-10 lg:-mb-14"
+      >
+        centauri
+      </h1>
+      <h2
+        class="font-medium text-[2.88rem] md:text-[3.82rem] lg:text-[4.55rem] text-white"
+      >
+        ASTRO TURISMO
+      </h2>
+
+      <div class="w-1/4 border-b border-white my-1"></div>
+
+      <p class="text-white text-lg w-[400px] md:w-[500px] lg:w-[600px]">
+        Descubre los secretos del cosmos bajo los cielos más despejados del
+        mundo. Vive una experiencia única que conecta ciencia, naturaleza y
+        aventura.
+      </p>
+      <ButtonComponent text="Reservar tour" href="/explorar" target="_self" />
+    </div>
+  </section>
+
+  <div id="about">
+    <AboutComponent />
+  </div>
+  <div id="tours">
+    <TourComponent />
+  </div>
+  <div id="eventos">
+    <EventosAstronomicos />
+  </div>
+  <div id="galeria">
+    <GalleryComponent />
+  </div>
+  <div id="colaboradores">
+    <Colaboradores />
+  </div>
+</Layout>
+<style>
+  h1 {
+    font-family: "Orbitron Variable", sans-serif;
+    /* font-family: "Tourney Variable", system-ui; */
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  }
+  .stroke-text {
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* Trazo del texto */
+    position: relative;
+  }
+  .text-hero {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s;
+  }
+</style>

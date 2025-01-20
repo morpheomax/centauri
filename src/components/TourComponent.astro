@@ -1,0 +1,23 @@
+---
+import TourList from "../components/TourList";
+---
+
+<section class="bg-black py-16 px-8">
+  <!-- Título de la sección -->
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-extrabold text-gray-200 mb-4">
+      Descubre Nuestros Tours Astronómicos
+    </h2>
+    <p class="text-lg text-gray-200">
+      Únete a nosotros en emocionantes aventuras bajo el cielo estrellado y
+      explora los misterios del universo con nuestros expertos.
+    </p>
+  </div>
+
+  <!-- Lista de tours -->
+  <div class="flex justify-center">
+    <section class="w-full max-w-screen-lg">
+      <TourList client:only="react" />
+    </section>
+  </div>
+</section>

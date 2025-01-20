@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Conjunción de 6 planetas",
+        "fecha": "21-01-2025",
+        "descripcion": "Un evento astronómico poco común en el que Marte, Júpiter, Urano, Neptuno, Venus y Saturno se alinearán en el cielo nocturno. Una excelente oportunidad para observar a varios planetas a la vez.",
+        "ubicacion": "Visible desde todo Chile",
+        "imagen": "/images/conjuncion-6-planetas.jpg",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "nombre": "Eclipse Lunar Total",
+        "fecha": "14-03-2025",
+        "descripcion": "La Luna se sumergirá completamente en la sombra de la Tierra, adquiriendo un tono rojizo. Un espectáculo impresionante que se podrá apreciar a simple vista.",
+        "ubicacion": "Visible desde gran parte de Chile",
+        "imagen": "/images/eclipse-lunar-total.jpg",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "nombre": "Eclipse Solar Parcial",
+        "fecha": "29-03-2025",
+        "descripcion": "La Luna pasará frente al Sol, ocultando una parte de su disco. Es importante utilizar protección ocular adecuada para observar este fenómeno.",
+        "ubicacion": "Visible en algunas regiones de Chile",
+        "imagen": "/images/eclipse-solar-parcial.jpg",
+        "link": "#"
+    },
+    {
+        "id": 4,
+        "nombre": "Lluvia de Perseidas",
+        "fecha": "11-08-2025",
+        "descripcion": "Una de las lluvias de meteoros más populares del año, con la posibilidad de observar decenas de meteoros por hora. Ideal para disfrutar en un lugar oscuro y despejado.",
+        "ubicacion": "Visible desde todo Chile",
+        "imagen": "/images/lluvia-perseidas.jpg",
+        "link": "#"
+    },
+    {
+        "id": 5,
+        "nombre": "Lluvia de Oriónidas",
+        "fecha": "22-23 de octubre",
+        "descripcion": "Otra lluvia de meteoros asociada al cometa Halley, ofreciendo un espectáculo celestial de mediana intensidad.",
+        "ubicacion": "Visible desde todo Chile",
+        "imagen": "/images/lluvia-orionidas.jpg",
+        "link": "#"
+    },
+    {
+        "id": 6,
+        "nombre": "Lluvia de Táuridas",
+        "fecha": "12-11-2025",
+        "descripcion": "Lluvia de meteoros con actividad moderada, conocida por producir bólidos brillantes.",
+        "ubicacion": "Visible desde todo Chile",
+        "imagen": "/images/lluvia-tauridas.jpg",
+        "link": "#"
+    },
+    {
+        "id": 7,
+        "nombre": "Lluvia de Gemínidas",
+        "fecha": "14-12-2025",
+        "descripcion": "Una de las lluvias de meteoros más intensas del año, con la posibilidad de observar decenas de meteoros por hora.",
+        "ubicacion": "Visible desde todo Chile",
+        "imagen": "/images/lluvia-geminidas.jpg",
+        "link": "#"
+    }
+]
